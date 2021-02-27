@@ -39,17 +39,17 @@ body {
   color: var(--text);
 }
 
-.experience.bar {
+.experience-bar {
   display: flex;
   align-items: center;
 
 }
 
-.experience.bar span {
+.experience-bar span {
   font-size: 1rem;
 }
 
-.experience.bar > div {
+.experience-bar > div {
   flex: 1;
   height: 4px;
   border-radius: 4px;
@@ -58,10 +58,12 @@ body {
   position: relative;
 }
 
-
-/* 16px 0.9375 = 15px */
-
-
+span.current-experience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
+/* 16px mesmo que 1rem 0.9375 = 15px */
 
 body, input, textarea, button {
   font: 400 1rem "Inter", sans-serif;
@@ -87,7 +89,7 @@ a {
 
 }
 
-.experience.bar > div > div {
+.experience-bar > div > div {
   height: 4px;
   border-radius: 4px;
   background: var(--green);
